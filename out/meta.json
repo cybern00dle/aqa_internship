@@ -1,0 +1,93 @@
+[
+    {
+        "class": "BTS",
+        "isRoot": true,
+        "documentation": "Base Transmitter Station. This is the only root class",
+        "min": "1",
+        "max": "1",
+        "parameters": [
+            {
+                "name": "id",
+                "type": "uint32"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "class": "MGMT",
+        "isRoot": false,
+        "documentation": "Management related",
+        "min": "1",
+        "max": "1",
+        "parameters": []
+    },
+    {
+        "class": "COMM",
+        "isRoot": false,
+        "documentation": "Communication services",
+        "min": "1",
+        "max": "1",
+        "parameters": []
+    },
+    {
+        "class": "MetricJob",
+        "isRoot": false,
+        "documentation": "Perfomance metric job",
+        "min": "0",
+        "max": "100",
+        "parameters": [
+            {
+                "name": "isFinished",
+                "type": "boolean"
+            },
+            {
+                "name": "jobId",
+                "type": "uint32"
+            }
+        ]
+    },
+    {
+        "class": "CPLANE",
+        "isRoot": false,
+        "documentation": "Perfomance metric job",
+        "min": "0",
+        "max": "1",
+        "parameters": []
+    },
+    {
+        "class": "RU",
+        "isRoot": false,
+        "documentation": "Radio Unit hardware element",
+        "min": "0",
+        "max": "42",
+        "parameters": [
+            {
+                "name": "hwRevision",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "uint32"
+            },
+            {
+                "name": "ipv4Address",
+                "type": "string"
+            },
+            {
+                "name": "manufacturerName",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "class": "HWE",
+        "isRoot": false,
+        "documentation": "Hardware equipment",
+        "min": "1",
+        "max": "1",
+        "parameters": []
+    }
+]
